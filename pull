@@ -1,0 +1,11 @@
+if [[ $1 = "" ]]; then
+  echo "usage: pull [resource name]"
+  echo "       pull all"
+  echo ""
+  echo "example: pull sphinx"
+elif [[ $1 = "all" ]]; then
+  tx pull --lang zh_CN	
+else
+  tx pull -r sphinx-doc-1_7.$1 --lang zh_CN
+fi
+
