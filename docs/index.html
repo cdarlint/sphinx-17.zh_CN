@@ -80,7 +80,7 @@
       <h3>导航</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
-          <a href="genindex.html" title="总目录"
+          <a href="genindex.html" title="总索引"
              accesskey="I">索引</a></li>
         <li class="right" >
           <a href="py-modindex.html" title="Python 模块索引"
@@ -93,19 +93,18 @@
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper"><p class="logo">A <a href="http://pocoo.org/">
   <img src="_static/pocoo.png" alt="Pocoo" /></a>
-  project</p>
+  项目成员</p>
 
 <h3>Download</h3>
 
-<p>Current version: <b><a href="changes.html">1.7.4</a></b></p>
-<p>Get Sphinx from the <a href="https://pypi.python.org/pypi/Sphinx">Python Package
-Index</a>, or install it with:</p>
+<p>当前版本：<b><a href="changes.html">1.7.4</a></b></p>
+<p>从 <a href="https://pypi.python.org/pypi/Sphinx">PyPi</a>获取 Sphinx，或使用如下命令安装：</p>
 <pre>pip install -U Sphinx</pre>
 
 
-<h3>Questions? Suggestions?</h3>
+<h3>疑问？建议？</h3>
 
-<p>Join the <a href="http://groups.google.com/group/sphinx-users">sphinx-users</a> mailing list on Google Groups:</p>
+<p>加入Google Groups上的<a href="http://groups.google.com/group/sphinx-users">sphinx用户</a>邮件组：</p>
 <div class="subscribeformwrapper">
 <form action="http://groups.google.com/group/sphinx-users/boxsubscribe"
       class="subscribeform">
@@ -114,9 +113,8 @@ Index</a>, or install it with:</p>
   <input type="submit" name="sub" value="Subscribe" />
 </form>
 </div>
-<p>or come to the <tt>#sphinx-doc</tt> channel on FreeNode.</p>
-<p>You can also open an issue at the
-  <a href="https://github.com/sphinx-doc/sphinx/issues">tracker</a>.</p>
+<p>或者来 FreeNode 网站的 <tt>#sphinx-doc</tt>频道找到我们。</p>
+<p>你也可以在<a href="https://github.com/sphinx-doc/sphinx/issues">GitHub Issue</a>打开新的话题。</p>
 <div id="searchbox" style="display: none" role="search">
   <h3>快速搜索</h3>
     <div class="searchformwrapper">
@@ -137,122 +135,98 @@ Index</a>, or install it with:</p>
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <h1>Welcome</h1>
+  <h1>欢迎</h1>
 
   <div class="quotebar">
-    <p><em>What users say:</em></p>
-    <p>&#8220;Cheers for a great tool that actually makes programmers <b>want</b>
-      to write documentation!&#8220;</p>
+    <p><em>用户评论：</em></p>
+    <p>欢呼！这个伟大的工具让程序员<b>愿意</b>去写文档了！</p>
   </div>
 
   <p>
-    Sphinx is a tool that makes it easy to create intelligent and beautiful
-    documentation, written by Georg Brandl and licensed under the BSD license.</p>
-  <p>It was originally created for <a href="https://docs.python.org/">the
-    Python documentation</a>, and it has excellent facilities for the
-    documentation of software projects in a range of languages.  Of
-    course, this site is also created from reStructuredText sources using
-    Sphinx!  The following features should be highlighted:
+Sphinx这个工具，可以方便地创建智能而美观的文档，作者是 Georg Brandl，发布的协议是BSD协议。</p>
+  <p>本项目最初是为了制作和维护<a href="https://docs.python.org/">Python官方文档</a>，它对各种软件文档的支持都非常棒。当然，本网站也是使用 reStructuredText 源码写成，并使用 Sphinx 生成的！
+它具有以下特色：
   </p>
   <ul>
-    <li><b>Output formats:</b> HTML (including Windows HTML Help), LaTeX (for
-      printable PDF versions), ePub, Texinfo, manual pages, plain text</li>
-    <li><b>Extensive cross-references:</b> semantic markup and automatic links
-      for functions, classes, citations, glossary terms and similar pieces of
-      information</li>
-    <li><b>Hierarchical structure:</b> easy definition of a document tree, with
-      automatic links to siblings, parents and children</li>
-    <li><b>Automatic indices:</b> general index as well as a language-specific
-      module indices</li>
-    <li><b>Code handling:</b> automatic highlighting using the <a
-      href="http://pygments.org">Pygments</a> highlighter</li>
-    <li><b>Extensions:</b> automatic testing of code snippets, inclusion of
-      docstrings from Python modules (API docs), and
-      <a href="ext/builtins.html#builtin-sphinx-extensions">more</a></li>
-    <li><b>Contributed extensions:</b> more than
-      50 extensions <a href="develop.html#extensions">contributed by users</a>
-      in a second repository; most of them installable from PyPI</li>
+    <li><b>输出格式：</b>HTML（包括Windows HTML帮助），LaTeX（生成可打印的PDF文档），ePub，Texinfo，manpages，纯文本格式</li>
+    <li><b>交叉引用：</b>对函数、类、引用、词汇表，以及类似的内容提供语义标记并自动建立链接</li>
+    <li><b>组织结构：</b>易于上手的文档树结构，自动链接到当前级别、上级、下级的其他内容</li>
+    <li><b>建立索引：</b>文档目录，以及针对特定语言的模块索引</li>
+    <li><b>代码样式：</b>使用 <a
+      href="http://pygments.org">Pygments</a> 自动高亮代码</li>
+    <li><b>扩展功能：</b>自动测试代码片断，引入其他 Python 模块（API 文档）中的 docstring，以及<a href="ext/builtins.html#builtin-sphinx-extensions">更多功能</a></li>
+    <li><b>用户模块：</b>由其他<a href="develop.html#extensions">用户贡献</a>的超过 50 个扩展模块，在另外的软件仓库中；多数都可以从 PyPI 直接安装</li>
   </ul>
   <p>
-    Sphinx uses <a href="http://docutils.sourceforge.net/rst.html">reStructuredText</a>
-    as its markup language, and many of its strengths come from the power and
-    straightforwardness of reStructuredText and its parsing and translating
-    suite, the <a href="http://docutils.sourceforge.net/">Docutils</a>.
+Sphinx 使用 <a href="http://docutils.sourceforge.net/rst.html">reStructuredText</a> 作为标记语言，很多强大的功能都直接来自于 reStructuredText，以及它使用的编译工具包，<a href="http://docutils.sourceforge.net/">Docutils</a>。
   </p>
 
-  <h2 style="margin-bottom: 0">Documentation</h2>
+  <h2 style="margin-bottom: 0">文档</h2>
 
   <table class="contentstable">
     <tr>
       <td>
-        <p class="biglink"><a class="biglink" href="tutorial.html">First steps with Sphinx</a><br/>
-           <span class="linkdescr">overview of basic tasks</span></p>
-      </td><td><p class="biglink"><a class="biglink" href="search.html">Search page</a><br/>
-           <span class="linkdescr">search the documentation</span></p>
+        <p class="biglink"><a class="biglink" href="tutorial.html">Sphinx 快速上手</a><br/>
+           <span class="linkdescr">基本功能简介</span></p>
+      </td><td><p class="biglink"><a class="biglink" href="search.html">搜索页面</a><br/>
+           <span class="linkdescr">在文档中搜索</span></p>
       </td>
     </tr><tr>
       <td>
         <p class="biglink"><a class="biglink" href="contents.html">目录</a><br/>
-           <span class="linkdescr">for a complete overview</span></p>
-      </td><td><p class="biglink"><a class="biglink" href="genindex.html">总目录</a><br/>
-           <span class="linkdescr">所的函数，类，术语</span></p>
+           <span class="linkdescr">全部章节的目录</span></p>
+      </td><td><p class="biglink"><a class="biglink" href="genindex.html">总索引</a><br/>
+           <span class="linkdescr">这里列出所有的函数，类及术语</span></p>
       </td>
     </tr><tr>
       <td>
-        <p class="biglink"><a class="biglink" href="changes.html">Changes</a><br/>
-           <span class="linkdescr">release history</span></p>
+        <p class="biglink"><a class="biglink" href="changes.html">历史变更记录</a><br/>
+           <span class="linkdescr">记录了历史版本中的变化</span></p>
       </td><td>
       </td>
     </tr>
   </table>
 
   <p>
-    You can also download PDF/EPUB versions of the Sphinx documentation:
-    a <a href="https://media.readthedocs.org/pdf/sphinx/stable/sphinx.pdf">PDF version</a> generated from
-    the LaTeX Sphinx produces, and
-    a <a href="https://media.readthedocs.org/epub/sphinx/stable/sphinx.epub">EPUB version</a>.
-   
+你也可以下载 PDF/EPUB 格式的 Sphinx 文档：
+使用 LaTex 生成的 <a href="https://media.readthedocs.org/pdf/sphinx/stable/sphinx.pdf">PDF版本</a>
+<a href="https://media.readthedocs.org/epub/sphinx/stable/sphinx.epub">EPUB版本</a>。
   </p>
 
-  <h2>Examples</h2>
-  <p>Links to documentation generated with Sphinx can be found on the
-    <a href="examples.html">Projects using Sphinx</a> page.
+  <h2>实际案例</h2>
+  <p>使用 Sphinx 生成其文档的项目，可以在
+<a href="examples.html">使用 Sphinx 的工程项目</a>页面查看。
   </p>
   <p>
-    For examples of how Sphinx source files look, use the &#8220;Show
-    source&#8221; links on all pages of the documentation apart from this
-    welcome page.
+要查看 Sphinx 源码文件的样例，点击
+“本页：显示源代码”的链接即可，除了你现在看到的欢迎页面，
+其他页面都会显示这个链接。
   </p>
 
-  <p>You may also be interested in the very nice
-    <a href="http://matplotlib.sourceforge.net/sampledoc/">tutorial</a> on how to
-    create a customized documentation using Sphinx written by the matplotlib
-    developers.</p>
+  <p>你可能对 matplotlib 开发者编写的
+精致的<a href="http://matplotlib.sourceforge.net/sampledoc/">教程</a>感兴趣，
+它讲解了如何使用 Sphinx 编写定制化的文档。</p>
 
-  <p>There is a <a href="http://docs.sphinx-users.jp/">Japanese translation</a>
-    of this documentation, thanks to the Japanese Sphinx user group.</p>
-  <p>A Japanese book about Sphinx has been published by O'Reilly:
-    <a href="http://www.oreilly.co.jp/books/9784873116488/">Sphinxをはじめよう /
-      Learning Sphinx</a>.</p>
+  <p>本文档已经有了<a href="http://docs.sphinx-users.jp/">日语翻译版本</a>，非常感谢日本的 Sphinx 用户组。</p>
+  <p>O'Reilly 有一本日语的关于 Sphinx 的书籍：
+<a href="http://www.oreilly.co.jp/books/9784873116488/">Sphinxをはじめよう /
+ 学习 Sphinx</a>。</p>
   <!-- <p><img src="_static/bookcover.png"/></p> -->
 
 
-  <h2>Hosting</h2>
+  <h2>在互联网上展示文档</h2>
 
-  <p>Need a place to host your Sphinx docs?
-    <a href="https://readthedocs.org/">readthedocs.org</a> hosts a lot of Sphinx docs
-    already, and integrates well with projects' source control.  It also features a
-    powerful built-in search that exceeds the possibilities of Sphinx' JavaScript-based
-    offline search.</p>
+  <p>需要一个网页空间展示你的 Sphinx 文档？
+<a href="https://readthedocs.org/">readthedocs.org</a>网站上已经有大量的 Sphinx 制作的文档了，它可以很好地与源码管理软件配合起来工作。
+这个网站不仅可以使用 Sphinx 生成的基于 JavaScript 的搜索，还另外支持更加强大的全文搜索。</p>
 
-  <h2>Contributor Guide</h2>
+  <h2>贡献指南</h2>
 
-  <p>If you want to contribute to the project,
-    this part of the documentation is for you.</p>
+  <p>如果你想为此项目贡献代码，就应该阅读此部分文档</p>
 
     <ul>
-      <li><a href="devguide.html">Sphinx Developer’s Guide</a></li>
-      <li><a href="authors.html">Sphinx Authors</a></li>
+      <li><a href="devguide.html">Sphinx 开发者指南</a></li>
+      <li><a href="authors.html">Sphinx贡献者名单</a></li>
     </ul>
 
 
@@ -265,7 +239,7 @@ Index</a>, or install it with:</p>
       <h3>导航</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
-          <a href="genindex.html" title="总目录"
+          <a href="genindex.html" title="总索引"
              >索引</a></li>
         <li class="right" >
           <a href="py-modindex.html" title="Python 模块索引"

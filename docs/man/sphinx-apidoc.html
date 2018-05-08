@@ -80,7 +80,7 @@
       <h3>导航</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
-          <a href="../genindex.html" title="总目录"
+          <a href="../genindex.html" title="总索引"
              accesskey="I">索引</a></li>
         <li class="right" >
           <a href="../py-modindex.html" title="Python 模块索引"
@@ -106,7 +106,7 @@
 <li><a class="reference internal" href="#description">Description</a></li>
 <li><a class="reference internal" href="#options">Options</a></li>
 <li><a class="reference internal" href="#environment">Environment</a></li>
-<li><a class="reference internal" href="#see-also">See also</a></li>
+<li><a class="reference internal" href="#see-also">参见</a></li>
 </ul>
 </li>
 </ul>
@@ -163,8 +163,7 @@ paths to be excluded from the generation.</p>
 <p><code class="docutils literal notranslate"><span class="pre">sphinx-apidoc</span></code> generates source files that use <a class="reference internal" href="../ext/autodoc.html#module-sphinx.ext.autodoc" title="sphinx.ext.autodoc: Include documentation from docstrings."><code class="xref py py-mod docutils literal notranslate"><span class="pre">sphinx.ext.autodoc</span></code></a>
 to document all found modules.  If any modules have side effects on import,
 these will be executed by <code class="docutils literal notranslate"><span class="pre">autodoc</span></code> when <code class="docutils literal notranslate"><span class="pre">sphinx-build</span></code> is run.</p>
-<p class="last">If you document scripts (as opposed to library modules), make sure their main
-routine is protected by a <code class="docutils literal notranslate"><span class="pre">if</span> <span class="pre">__name__</span> <span class="pre">==</span> <span class="pre">'__main__'</span></code> condition.</p>
+<p class="last">如果你要引入脚本（而不是库模块），确保主程序 main 有这个条件保护着：<code class="docutils literal notranslate"><span class="pre">if</span> <span class="pre">__name__</span> <span class="pre">==</span> <span class="pre">'__main__'</span></code>。</p>
 </div>
 </div>
 <div class="section" id="options">
@@ -247,10 +246,7 @@ example, when docstrings already contain headings.</p>
 <dl class="option">
 <dt id="cmdoption-sphinx-apidoc-implicit-namespaces">
 <code class="descname">--implicit-namespaces</code><code class="descclassname"></code><a class="headerlink" href="#cmdoption-sphinx-apidoc-implicit-namespaces" title="永久链接至目标">¶</a></dt>
-<dd><p>By default sphinx-apidoc processes sys.path searching for modules only.
-Python 3.3 introduced <span class="target" id="index-0"></span><a class="pep reference external" href="https://www.python.org/dev/peps/pep-0420"><strong>PEP 420</strong></a> implicit namespaces that allow module path
-structures such as <code class="docutils literal notranslate"><span class="pre">foo/bar/module.py</span></code> or <code class="docutils literal notranslate"><span class="pre">foo/bar/baz/__init__.py</span></code>
-(notice that <code class="docutils literal notranslate"><span class="pre">bar</span></code> and <code class="docutils literal notranslate"><span class="pre">foo</span></code> are namespaces, not modules).</p>
+<dd><p>默认情况下，sphinx-apidoc 只处理 sys.path 中找到的模块。从 Python 3.3 起，引入了 <span class="target" id="index-2"></span><a class="pep reference external" href="https://www.python.org/dev/peps/pep-0420"><strong>PEP 420</strong></a> 隐式命名空间，允许子目录中的模块，比如 <code class="docutils literal notranslate"><span class="pre">foo/bar/module.py</span></code> 或者 <code class="docutils literal notranslate"><span class="pre">foo/bar/baz/__init__.py</span></code> （注意这里的 <cite>foo`</cite> 和 <code class="docutils literal notranslate"><span class="pre">bar</span></code> 都用来表示命名空间，并不是模块）。</p>
 <p>Interpret paths recursively according to PEP-0420.</p>
 </dd></dl>
 
@@ -264,32 +260,31 @@ structures such as <code class="docutils literal notranslate"><span class="pre">
 <dl class="option">
 <dt id="cmdoption-sphinx-apidoc-a">
 <code class="descname">-a</code><code class="descclassname"></code><a class="headerlink" href="#cmdoption-sphinx-apidoc-a" title="永久链接至目标">¶</a></dt>
-<dd><p>Append module_path to sys.path.</p>
+<dd><p>把 module_path 添加到 sys.path。</p>
 </dd></dl>
 
 <dl class="option">
 <dt id="cmdoption-sphinx-apidoc-h">
 <code class="descname">-H</code><code class="descclassname"> &lt;project&gt;</code><a class="headerlink" href="#cmdoption-sphinx-apidoc-h" title="永久链接至目标">¶</a></dt>
-<dd><p>Sets the project name to put in generated files (see <a class="reference internal" href="../setuptools.html#confval-project"><code class="xref std std-confval docutils literal notranslate"><span class="pre">project</span></code></a>).</p>
+<dd><p>指定项目名，参见 <a class="reference internal" href="../setuptools.html#confval-project"><code class="xref std std-confval docutils literal notranslate"><span class="pre">project</span></code></a>。</p>
 </dd></dl>
 
 <dl class="option">
 <dt id="id1">
 <code class="descname">-A</code><code class="descclassname"> &lt;author&gt;</code><a class="headerlink" href="#id1" title="永久链接至目标">¶</a></dt>
-<dd><p>Sets the author name(s) to put in generated files (see
-<a class="reference internal" href="../setuptools.html#confval-copyright"><code class="xref std std-confval docutils literal notranslate"><span class="pre">copyright</span></code></a>).</p>
+<dd><p>指定作者名字，参见 :confval:<a href="#id1"><span class="problematic" id="id2">``</span></a>copyright`。</p>
 </dd></dl>
 
 <dl class="option">
 <dt id="cmdoption-sphinx-apidoc-v">
 <code class="descname">-V</code><code class="descclassname"> &lt;version&gt;</code><a class="headerlink" href="#cmdoption-sphinx-apidoc-v" title="永久链接至目标">¶</a></dt>
-<dd><p>Sets the project version to put in generated files (see <a class="reference internal" href="../setuptools.html#confval-version"><code class="xref std std-confval docutils literal notranslate"><span class="pre">version</span></code></a>).</p>
+<dd><p>指定项目版本号，参见 <a class="reference internal" href="../setuptools.html#confval-version"><code class="xref std std-confval docutils literal notranslate"><span class="pre">version</span></code></a>。</p>
 </dd></dl>
 
 <dl class="option">
 <dt id="cmdoption-sphinx-apidoc-r">
 <code class="descname">-R</code><code class="descclassname"> &lt;release&gt;</code><a class="headerlink" href="#cmdoption-sphinx-apidoc-r" title="永久链接至目标">¶</a></dt>
-<dd><p>Sets the project release to put in generated files (see <a class="reference internal" href="../setuptools.html#confval-release"><code class="xref std std-confval docutils literal notranslate"><span class="pre">release</span></code></a>).</p>
+<dd><p>指定项目发布号，参见 <a class="reference internal" href="../setuptools.html#confval-release"><code class="xref std std-confval docutils literal notranslate"><span class="pre">release</span></code></a>。</p>
 </dd></dl>
 
 </div>
@@ -304,7 +299,7 @@ directives. Defaults to <code class="docutils literal notranslate"><span class="
 
 </div>
 <div class="section" id="see-also">
-<h2>See also<a class="headerlink" href="#see-also" title="永久链接至标题">¶</a></h2>
+<h2>参见<a class="headerlink" href="#see-also" title="永久链接至标题">¶</a></h2>
 <p><em class="manpage">sphinx-build(1)</em>, <em class="manpage">sphinx-autogen(1)</em></p>
 </div>
 </div>
@@ -319,7 +314,7 @@ directives. Defaults to <code class="docutils literal notranslate"><span class="
       <h3>导航</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
-          <a href="../genindex.html" title="总目录"
+          <a href="../genindex.html" title="总索引"
              >索引</a></li>
         <li class="right" >
           <a href="../py-modindex.html" title="Python 模块索引"

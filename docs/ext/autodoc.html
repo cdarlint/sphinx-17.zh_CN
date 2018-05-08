@@ -80,7 +80,7 @@
       <h3>导航</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
-          <a href="../genindex.html" title="总目录"
+          <a href="../genindex.html" title="总索引"
              accesskey="I">索引</a></li>
         <li class="right" >
           <a href="../py-modindex.html" title="Python 模块索引"
@@ -155,11 +155,8 @@ package must be in one of the directories on <code class="xref py py-data docuti
 </div>
 <div class="admonition warning">
 <p class="first admonition-title">警告</p>
-<p><a class="reference internal" href="#module-sphinx.ext.autodoc" title="sphinx.ext.autodoc: Include documentation from docstrings."><code class="xref py py-mod docutils literal notranslate"><span class="pre">autodoc</span></code></a> <strong>imports</strong> the modules to be documented.  If any
-modules have side effects on import, these will be executed by <code class="docutils literal notranslate"><span class="pre">autodoc</span></code>
-when <code class="docutils literal notranslate"><span class="pre">sphinx-build</span></code> is run.</p>
-<p class="last">If you document scripts (as opposed to library modules), make sure their main
-routine is protected by a <code class="docutils literal notranslate"><span class="pre">if</span> <span class="pre">__name__</span> <span class="pre">==</span> <span class="pre">'__main__'</span></code> condition.</p>
+<p><a class="reference internal" href="#module-sphinx.ext.autodoc" title="sphinx.ext.autodoc: Include documentation from docstrings."><code class="xref py py-mod docutils literal notranslate"><span class="pre">autodoc</span></code></a> 会 <strong>import</strong> 所有需要自动生成文档的模块。如果某些模块在导入时有一些额外的操作，在运行 <code class="docutils literal notranslate"><span class="pre">sphinx-build</span></code> 时，也会被 <code class="docutils literal notranslate"><span class="pre">autodoc</span></code> 执行。</p>
+<p class="last">如果你要引入脚本（而不是库模块），确保主程序 main 有这个条件保护着：<code class="docutils literal notranslate"><span class="pre">if</span> <span class="pre">__name__</span> <span class="pre">==</span> <span class="pre">'__main__'</span></code>。</p>
 </div>
 <p>For this to work, the docstrings must of course be written in correct
 reStructuredText.  You can then use all of the usual Sphinx markup in the
@@ -577,7 +574,7 @@ can modify <strong>in place</strong> to change what Sphinx puts into the output.
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<tr class="field-odd field"><th class="field-name">参数:</th><td class="field-body"><ul class="first last simple">
 <li><strong>app</strong> – the Sphinx application object</li>
 <li><strong>what</strong> – the type of the object which the docstring belongs to (one of
 <code class="docutils literal notranslate"><span class="pre">&quot;module&quot;</span></code>, <code class="docutils literal notranslate"><span class="pre">&quot;class&quot;</span></code>, <code class="docutils literal notranslate"><span class="pre">&quot;exception&quot;</span></code>, <code class="docutils literal notranslate"><span class="pre">&quot;function&quot;</span></code>, <code class="docutils literal notranslate"><span class="pre">&quot;method&quot;</span></code>,
@@ -609,7 +606,7 @@ what Sphinx puts into the output.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<tr class="field-odd field"><th class="field-name">参数:</th><td class="field-body"><ul class="first last simple">
 <li><strong>app</strong> – the Sphinx application object</li>
 <li><strong>what</strong> – the type of the object which the docstring belongs to (one of
 <code class="docutils literal notranslate"><span class="pre">&quot;module&quot;</span></code>, <code class="docutils literal notranslate"><span class="pre">&quot;class&quot;</span></code>, <code class="docutils literal notranslate"><span class="pre">&quot;exception&quot;</span></code>, <code class="docutils literal notranslate"><span class="pre">&quot;function&quot;</span></code>, <code class="docutils literal notranslate"><span class="pre">&quot;method&quot;</span></code>,
@@ -681,7 +678,7 @@ autodoc and other enabled extensions.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<tr class="field-odd field"><th class="field-name">参数:</th><td class="field-body"><ul class="first last simple">
 <li><strong>app</strong> – the Sphinx application object</li>
 <li><strong>what</strong> – the type of the object which the docstring belongs to (one of
 <code class="docutils literal notranslate"><span class="pre">&quot;module&quot;</span></code>, <code class="docutils literal notranslate"><span class="pre">&quot;class&quot;</span></code>, <code class="docutils literal notranslate"><span class="pre">&quot;exception&quot;</span></code>, <code class="docutils literal notranslate"><span class="pre">&quot;function&quot;</span></code>, <code class="docutils literal notranslate"><span class="pre">&quot;method&quot;</span></code>,
@@ -714,7 +711,7 @@ auto directive</li>
       <h3>导航</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
-          <a href="../genindex.html" title="总目录"
+          <a href="../genindex.html" title="总索引"
              >索引</a></li>
         <li class="right" >
           <a href="../py-modindex.html" title="Python 模块索引"

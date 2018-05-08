@@ -80,7 +80,7 @@
       <h3>导航</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
-          <a href="../genindex.html" title="总目录"
+          <a href="../genindex.html" title="总索引"
              accesskey="I">索引</a></li>
         <li class="right" >
           <a href="../py-modindex.html" title="Python 模块索引"
@@ -105,7 +105,7 @@
 <li><a class="reference internal" href="#synopsis">Synopsis</a></li>
 <li><a class="reference internal" href="#description">Description</a></li>
 <li><a class="reference internal" href="#options">Options</a></li>
-<li><a class="reference internal" href="#see-also">See also</a></li>
+<li><a class="reference internal" href="#see-also">参见</a></li>
 </ul>
 </li>
 </ul>
@@ -160,140 +160,136 @@ sample Makefile to be used with <em class="manpage">sphinx-build(1)</em>.</p>
 <dl class="option">
 <dt id="cmdoption-sphinx-quickstart-q">
 <code class="descname">-q</code><code class="descclassname"></code><code class="descclassname">, </code><code class="descname">--quiet</code><code class="descclassname"></code><a class="headerlink" href="#cmdoption-sphinx-quickstart-q" title="永久链接至目标">¶</a></dt>
-<dd><p>Quiet mode that will skips interactive wizard to specify options.
-This option requires <cite>-p</cite>, <cite>-a</cite> and <cite>-v</cite> options.</p>
+<dd><p>静默模式，跳过交互式提问项目。这个参数需要提供 <cite>-p</cite>，<cite>-a</cite> 和 <cite>-v</cite> 参数。</p>
 </dd></dl>
 
 <dl class="option">
 <dt id="cmdoption-sphinx-quickstart-h">
 <code class="descname">-h</code><code class="descclassname"></code><code class="descclassname">, </code><code class="descname">--help</code><code class="descclassname"></code><code class="descclassname">, </code><code class="descname">--version</code><code class="descclassname"></code><a class="headerlink" href="#cmdoption-sphinx-quickstart-h" title="永久链接至目标">¶</a></dt>
-<dd><p>Display usage summary or Sphinx version.</p>
+<dd><p>显示使用方法简介，或者 Sphinx 版本号。</p>
 </dd></dl>
 
 <p class="rubric">Structure Options</p>
 <dl class="option">
 <dt id="cmdoption-sphinx-quickstart-sep">
 <code class="descname">--sep</code><code class="descclassname"></code><a class="headerlink" href="#cmdoption-sphinx-quickstart-sep" title="永久链接至目标">¶</a></dt>
-<dd><p>If specified, separate source and build directories.</p>
+<dd><p>如果设置此选项，将使用不同的源目录与构建目录。</p>
 </dd></dl>
 
 <dl class="option">
 <dt id="cmdoption-sphinx-quickstart-dot">
 <code class="descname">--dot</code><code class="descclassname">=DOT</code><a class="headerlink" href="#cmdoption-sphinx-quickstart-dot" title="永久链接至目标">¶</a></dt>
-<dd><p>Inside the root directory, two more directories will be created;
-“_templates” for custom HTML templates and “_static” for custom stylesheets
-and other static files. You can enter another prefix (such as “.”) to
-replace the underscore.</p>
+<dd><p>这个选项在根目录中创建两个文件夹：“_templates”用于自定义 HTML 模板文件，“_static”用于自定义样式表及其他静态文件。你可以指定不同的前缀（比如“.”）代替下划线。</p>
 </dd></dl>
 
 <p class="rubric">Project Basic Options</p>
 <dl class="option">
 <dt id="cmdoption-sphinx-quickstart-p">
 <code class="descname">-p</code><code class="descclassname"> PROJECT</code><code class="descclassname">, </code><code class="descname">--project</code><code class="descclassname">=PROJECT</code><a class="headerlink" href="#cmdoption-sphinx-quickstart-p" title="永久链接至目标">¶</a></dt>
-<dd><p>Project name will be set. (see <a class="reference internal" href="../setuptools.html#confval-project"><code class="xref std std-confval docutils literal notranslate"><span class="pre">project</span></code></a>).</p>
+<dd><p>项目名称在此设置。（参见 <a class="reference internal" href="../setuptools.html#confval-project"><code class="xref std std-confval docutils literal notranslate"><span class="pre">project</span></code></a>）。</p>
 </dd></dl>
 
 <dl class="option">
 <dt id="cmdoption-sphinx-quickstart-a">
 <code class="descname">-a</code><code class="descclassname"> AUTHOR</code><code class="descclassname">, </code><code class="descname">--author</code><code class="descclassname">=AUTHOR</code><a class="headerlink" href="#cmdoption-sphinx-quickstart-a" title="永久链接至目标">¶</a></dt>
-<dd><p>Author names. (see <a class="reference internal" href="../setuptools.html#confval-copyright"><code class="xref std std-confval docutils literal notranslate"><span class="pre">copyright</span></code></a>).</p>
+<dd><p>作者名字。（参见 <a class="reference internal" href="../setuptools.html#confval-copyright"><code class="xref std std-confval docutils literal notranslate"><span class="pre">copyright</span></code></a>）。</p>
 </dd></dl>
 
 <dl class="option">
 <dt id="cmdoption-sphinx-quickstart-v">
 <code class="descname">-v</code><code class="descclassname"> VERSION</code><a class="headerlink" href="#cmdoption-sphinx-quickstart-v" title="永久链接至目标">¶</a></dt>
-<dd><p>Version of project. (see <a class="reference internal" href="../setuptools.html#confval-version"><code class="xref std std-confval docutils literal notranslate"><span class="pre">version</span></code></a>).</p>
+<dd><p>项目版本。（参见 <a class="reference internal" href="../setuptools.html#confval-version"><code class="xref std std-confval docutils literal notranslate"><span class="pre">version</span></code></a>）。</p>
 </dd></dl>
 
 <dl class="option">
 <dt id="cmdoption-sphinx-quickstart-r">
 <code class="descname">-r</code><code class="descclassname"> RELEASE</code><code class="descclassname">, </code><code class="descname">--release</code><code class="descclassname">=RELEASE</code><a class="headerlink" href="#cmdoption-sphinx-quickstart-r" title="永久链接至目标">¶</a></dt>
-<dd><p>Release of project. (see <a class="reference internal" href="../setuptools.html#confval-release"><code class="xref std std-confval docutils literal notranslate"><span class="pre">release</span></code></a>).</p>
+<dd><p>项目发布（号）。（参见 <a class="reference internal" href="../setuptools.html#confval-release"><code class="xref std std-confval docutils literal notranslate"><span class="pre">release</span></code></a>）。</p>
 </dd></dl>
 
 <dl class="option">
 <dt id="cmdoption-sphinx-quickstart-l">
 <code class="descname">-l</code><code class="descclassname"> LANGUAGE</code><code class="descclassname">, </code><code class="descname">--language</code><code class="descclassname">=LANGUAGE</code><a class="headerlink" href="#cmdoption-sphinx-quickstart-l" title="永久链接至目标">¶</a></dt>
-<dd><p>Document language. (see <a class="reference internal" href="../config.html#confval-language"><code class="xref std std-confval docutils literal notranslate"><span class="pre">language</span></code></a>).</p>
+<dd><p>文档语言。（参见 <a class="reference internal" href="../config.html#confval-language"><code class="xref std std-confval docutils literal notranslate"><span class="pre">language</span></code></a>）。</p>
 </dd></dl>
 
 <dl class="option">
 <dt id="cmdoption-sphinx-quickstart-suffix">
 <code class="descname">--suffix</code><code class="descclassname">=SUFFIX</code><a class="headerlink" href="#cmdoption-sphinx-quickstart-suffix" title="永久链接至目标">¶</a></dt>
-<dd><p>Source file suffix. (see <a class="reference internal" href="../config.html#confval-source_suffix"><code class="xref std std-confval docutils literal notranslate"><span class="pre">source_suffix</span></code></a>).</p>
+<dd><p>源文件后缀。（参见 :confval:<a href="#id1"><span class="problematic" id="id2">`</span></a>source_suffix）。</p>
 </dd></dl>
 
 <dl class="option">
 <dt id="cmdoption-sphinx-quickstart-master">
 <code class="descname">--master</code><code class="descclassname">=MASTER</code><a class="headerlink" href="#cmdoption-sphinx-quickstart-master" title="永久链接至目标">¶</a></dt>
-<dd><p>Master document name. (see <a class="reference internal" href="../config.html#confval-master_doc"><code class="xref std std-confval docutils literal notranslate"><span class="pre">master_doc</span></code></a>).</p>
+<dd><p>主文档文件名称。（参见 <a class="reference internal" href="../config.html#confval-master_doc"><code class="xref std std-confval docutils literal notranslate"><span class="pre">master_doc</span></code></a>）。</p>
 </dd></dl>
 
 <dl class="option">
 <dt id="cmdoption-sphinx-quickstart-epub">
 <code class="descname">--epub</code><code class="descclassname"></code><a class="headerlink" href="#cmdoption-sphinx-quickstart-epub" title="永久链接至目标">¶</a></dt>
-<dd><p>Use epub.</p>
+<dd><p>使用 epub 格式。</p>
 </dd></dl>
 
 <p class="rubric">Extension Options</p>
 <dl class="option">
 <dt id="cmdoption-sphinx-quickstart-ext-autodoc">
 <code class="descname">--ext-autodoc</code><code class="descclassname"></code><a class="headerlink" href="#cmdoption-sphinx-quickstart-ext-autodoc" title="永久链接至目标">¶</a></dt>
-<dd><p>Enable <cite>sphinx.ext.autodoc</cite> extension.</p>
+<dd><p>使用 <cite>sphinx.ext.autodoc</cite> 扩展程序。</p>
 </dd></dl>
 
 <dl class="option">
 <dt id="cmdoption-sphinx-quickstart-ext-doctest">
 <code class="descname">--ext-doctest</code><code class="descclassname"></code><a class="headerlink" href="#cmdoption-sphinx-quickstart-ext-doctest" title="永久链接至目标">¶</a></dt>
-<dd><p>Enable <cite>sphinx.ext.doctest</cite> extension.</p>
+<dd><p>使用 <cite>sphinx.ext.doctest</cite> 扩展程序。</p>
 </dd></dl>
 
 <dl class="option">
 <dt id="cmdoption-sphinx-quickstart-ext-intersphinx">
 <code class="descname">--ext-intersphinx</code><code class="descclassname"></code><a class="headerlink" href="#cmdoption-sphinx-quickstart-ext-intersphinx" title="永久链接至目标">¶</a></dt>
-<dd><p>Enable <cite>sphinx.ext.intersphinx</cite> extension.</p>
+<dd><p>使用 <cite>sphinx.ext.intersphinx</cite> 扩展程序。</p>
 </dd></dl>
 
 <dl class="option">
 <dt id="cmdoption-sphinx-quickstart-ext-todo">
 <code class="descname">--ext-todo</code><code class="descclassname"></code><a class="headerlink" href="#cmdoption-sphinx-quickstart-ext-todo" title="永久链接至目标">¶</a></dt>
-<dd><p>Enable <cite>sphinx.ext.todo</cite> extension.</p>
+<dd><p>使用 <cite>sphinx.ext.todo</cite> 扩展程序。</p>
 </dd></dl>
 
 <dl class="option">
 <dt id="cmdoption-sphinx-quickstart-ext-coverage">
 <code class="descname">--ext-coverage</code><code class="descclassname"></code><a class="headerlink" href="#cmdoption-sphinx-quickstart-ext-coverage" title="永久链接至目标">¶</a></dt>
-<dd><p>Enable <cite>sphinx.ext.coverage</cite> extension.</p>
+<dd><p>使用 <cite>sphinx.ext.coverage</cite> 扩展程序。</p>
 </dd></dl>
 
 <dl class="option">
 <dt id="cmdoption-sphinx-quickstart-ext-imgmath">
 <code class="descname">--ext-imgmath</code><code class="descclassname"></code><a class="headerlink" href="#cmdoption-sphinx-quickstart-ext-imgmath" title="永久链接至目标">¶</a></dt>
-<dd><p>Enable <cite>sphinx.ext.imgmath</cite> extension.</p>
+<dd><p>使用 <cite>sphinx.ext.imgmath</cite> 扩展程序。</p>
 </dd></dl>
 
 <dl class="option">
 <dt id="cmdoption-sphinx-quickstart-ext-mathjax">
 <code class="descname">--ext-mathjax</code><code class="descclassname"></code><a class="headerlink" href="#cmdoption-sphinx-quickstart-ext-mathjax" title="永久链接至目标">¶</a></dt>
-<dd><p>Enable <cite>sphinx.ext.mathjax</cite> extension.</p>
+<dd><p>使用 <cite>sphinx.ext.mathjax</cite> 扩展程序。</p>
 </dd></dl>
 
 <dl class="option">
 <dt id="cmdoption-sphinx-quickstart-ext-ifconfig">
 <code class="descname">--ext-ifconfig</code><code class="descclassname"></code><a class="headerlink" href="#cmdoption-sphinx-quickstart-ext-ifconfig" title="永久链接至目标">¶</a></dt>
-<dd><p>Enable <cite>sphinx.ext.ifconfig</cite> extension.</p>
+<dd><p>使用 <cite>sphinx.ext.ifconfig</cite> 扩展程序。</p>
 </dd></dl>
 
 <dl class="option">
 <dt id="cmdoption-sphinx-quickstart-ext-viewcode">
 <code class="descname">--ext-viewcode</code><code class="descclassname"></code><a class="headerlink" href="#cmdoption-sphinx-quickstart-ext-viewcode" title="永久链接至目标">¶</a></dt>
-<dd><p>Enable <cite>sphinx.ext.viewcode</cite> extension.</p>
+<dd><p>使用 <cite>sphinx.ext.viewcode</cite> 扩展程序。</p>
 </dd></dl>
 
 <dl class="option">
 <dt id="cmdoption-sphinx-quickstart-extensions">
 <code class="descname">--extensions</code><code class="descclassname">=EXTENSIONS</code><a class="headerlink" href="#cmdoption-sphinx-quickstart-extensions" title="永久链接至目标">¶</a></dt>
-<dd><p>Enable arbitary extensions.</p>
+<dd><p>使用指定的扩展程序。</p>
 </dd></dl>
 
 <p class="rubric">Makefile and Batchfile Creation Options</p>
@@ -303,32 +299,30 @@ replace the underscore.</p>
 <dd><p><code class="file docutils literal notranslate"><span class="pre">Makefile/make.bat</span></code> uses (or doesn’t use) <a class="reference internal" href="sphinx-build.html#make-mode"><span class="std std-ref">make-mode</span></a>.
 Default is <code class="docutils literal notranslate"><span class="pre">use</span></code>, which generates a more concise <code class="file docutils literal notranslate"><span class="pre">Makefile/make.bat</span></code>.</p>
 <div class="versionchanged">
-<p><span class="versionmodified">在 1.5 版更改: </span>make-mode is default.</p>
+<p><span class="versionmodified">在 1.5 版更改: </span>默认为使用 make-mode。</p>
 </div>
 </dd></dl>
 
 <dl class="option">
 <dt id="cmdoption-sphinx-quickstart-makefile">
 <code class="descname">--makefile</code><code class="descclassname"></code><code class="descclassname">, </code><code class="descname">--no-makefile</code><code class="descclassname"></code><a class="headerlink" href="#cmdoption-sphinx-quickstart-makefile" title="永久链接至目标">¶</a></dt>
-<dd><p>Create (or not create) makefile.</p>
+<dd><p>创建（或者不创建）makefile。</p>
 </dd></dl>
 
 <dl class="option">
 <dt id="cmdoption-sphinx-quickstart-batchfile">
 <code class="descname">--batchfile</code><code class="descclassname"></code><code class="descclassname">, </code><code class="descname">--no-batchfile</code><code class="descclassname"></code><a class="headerlink" href="#cmdoption-sphinx-quickstart-batchfile" title="永久链接至目标">¶</a></dt>
-<dd><p>Create (or not create) batchfile</p>
+<dd><p>创建（或者不创建）批处理文件</p>
 </dd></dl>
 
-<p class="rubric">Project templating</p>
+<p class="rubric">项目模板</p>
 <div class="versionadded">
-<p><span class="versionmodified">1.5 新版功能: </span>Project templating options for sphinx-quickstart</p>
+<p><span class="versionmodified">1.5 新版功能: </span>用于 sphinx-quickstart 程序的项目模板参数</p>
 </div>
 <dl class="option">
 <dt id="cmdoption-sphinx-quickstart-t">
 <code class="descname">-t</code><code class="descclassname"></code><code class="descclassname">, </code><code class="descname">--templatedir</code><code class="descclassname">=TEMPLATEDIR</code><a class="headerlink" href="#cmdoption-sphinx-quickstart-t" title="永久链接至目标">¶</a></dt>
-<dd><p>Template directory for template files.  You can modify the templates of
-sphinx project files generated by quickstart.  Following Jinja2 template
-files are allowed:</p>
+<dd><p>指定项目模板文件所在的文件夹。你可以修改 quickstart 生成的 Sphinx 项目文件中的模板文件。以下 Jinja2 模板可供使用：</p>
 <ul class="simple">
 <li><code class="docutils literal notranslate"><span class="pre">master_doc.rst_t</span></code></li>
 <li><code class="docutils literal notranslate"><span class="pre">conf.py_t</span></code></li>
@@ -344,12 +338,12 @@ files are allowed:</p>
 <dl class="option">
 <dt id="cmdoption-sphinx-quickstart-d">
 <code class="descname">-d</code><code class="descclassname"> NAME=VALUE</code><a class="headerlink" href="#cmdoption-sphinx-quickstart-d" title="永久链接至目标">¶</a></dt>
-<dd><p>Define a template variable</p>
+<dd><p>定义模板变量</p>
 </dd></dl>
 
 </div>
 <div class="section" id="see-also">
-<h2>See also<a class="headerlink" href="#see-also" title="永久链接至标题">¶</a></h2>
+<h2>参见<a class="headerlink" href="#see-also" title="永久链接至标题">¶</a></h2>
 <p><em class="manpage">sphinx-build(1)</em></p>
 </div>
 </div>
@@ -364,7 +358,7 @@ files are allowed:</p>
       <h3>导航</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
-          <a href="../genindex.html" title="总目录"
+          <a href="../genindex.html" title="总索引"
              >索引</a></li>
         <li class="right" >
           <a href="../py-modindex.html" title="Python 模块索引"

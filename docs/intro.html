@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Introduction &#8212; Sphinx 1.7.4 文档</title>
+    <title>简介 &#8212; Sphinx 1.7.4 文档</title>
     <link rel="stylesheet" href="_static/sphinx13.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <script type="text/javascript" src="_static/documentation_options.js"></script>
@@ -20,7 +20,7 @@
 
     <link rel="index" title="索引" href="genindex.html" />
     <link rel="search" title="搜索" href="search.html" />
-    <link rel="next" title="First Steps with Sphinx" href="tutorial.html" />
+    <link rel="next" title="Sphinx 初步" href="tutorial.html" />
     <link rel="prev" title="Sphinx documentation contents" href="contents.html" />
     <link rel="canonical" href="http://www.sphinx-doc.org/en/master/intro.html" />
 
@@ -80,13 +80,13 @@
       <h3>导航</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
-          <a href="genindex.html" title="总目录"
+          <a href="genindex.html" title="总索引"
              accesskey="I">索引</a></li>
         <li class="right" >
           <a href="py-modindex.html" title="Python 模块索引"
              >模块</a> |</li>
         <li class="right" >
-          <a href="tutorial.html" title="First Steps with Sphinx"
+          <a href="tutorial.html" title="Sphinx 初步"
              accesskey="N">下一页</a> |</li>
         <li class="right" >
           <a href="contents.html" title="Sphinx documentation contents"
@@ -100,11 +100,11 @@
         <div class="sphinxsidebarwrapper">
   <h3><a href="contents.html">內容目录</a></h3>
   <ul>
-<li><a class="reference internal" href="#">Introduction</a><ul>
-<li><a class="reference internal" href="#conversion-from-other-systems">Conversion from other systems</a></li>
-<li><a class="reference internal" href="#use-with-other-systems">Use with other systems</a></li>
-<li><a class="reference internal" href="#prerequisites">Prerequisites</a></li>
-<li><a class="reference internal" href="#usage">Usage</a></li>
+<li><a class="reference internal" href="#">简介</a><ul>
+<li><a class="reference internal" href="#conversion-from-other-systems">从其他文档格式导入</a></li>
+<li><a class="reference internal" href="#use-with-other-systems">与其他系统集成</a></li>
+<li><a class="reference internal" href="#prerequisites">系统需求</a></li>
+<li><a class="reference internal" href="#usage">如何使用</a></li>
 </ul>
 </li>
 </ul>
@@ -114,7 +114,7 @@
                         title="上一章">Sphinx documentation contents</a></p>
   <h4>下一个主题</h4>
   <p class="topless"><a href="tutorial.html"
-                        title="下一章">First Steps with Sphinx</a></p>
+                        title="下一章">Sphinx 初步</a></p>
   <div role="note" aria-label="source link">
     <h3>本页</h3>
     <ul class="this-page-menu">
@@ -143,7 +143,7 @@
           <div class="body" role="main">
             
   <div class="section" id="introduction">
-<h1>Introduction<a class="headerlink" href="#introduction" title="永久链接至标题">¶</a></h1>
+<h1>简介<a class="headerlink" href="#introduction" title="永久链接至标题">¶</a></h1>
 <p>This is the documentation for the Sphinx documentation builder.  Sphinx is a
 tool that translates a set of <a class="reference external" href="http://docutils.sourceforge.net/rst.html">reStructuredText</a> source files into various output
 formats, automatically producing cross-references, indices, etc.  That is, if
@@ -151,7 +151,7 @@ you have a directory containing a bunch of reST-formatted documents (and
 possibly subdirectories of docs in there as well), Sphinx can generate a
 nicely-organized arrangement of HTML files (in some other directory) for easy
 browsing and navigation.  But from the same source, it can also generate a PDF
-file using LaTeX, <a class="reference external" href="https://github.com/brechtm/rinohtype">rinohtype</a> or <a class="reference external" href="https://github.com/rst2pdf/rst2pdf">rst2pdf</a> (see <a class="reference internal" href="builders.html#builders"><span class="std std-ref">Available builders</span></a>).</p>
+file using LaTeX, <a class="reference external" href="https://github.com/brechtm/rinohtype">rinohtype</a> or <a class="reference external" href="https://github.com/rst2pdf/rst2pdf">rst2pdf</a> (see <a class="reference internal" href="builders.html#builders"><span class="std std-ref">可用的构建器</span></a>).</p>
 <p>The focus is on hand-written documentation, rather than auto-generated API docs.
 Though there is support for that kind of documentation as well (which is
 intended to be freely mixed with hand-written content), if you need pure API
@@ -161,38 +161,28 @@ understands reST.</p>
 also <a class="reference external" href="https://write-the-docs.readthedocs.io/">Write the docs</a>, written by Eric
 Holscher.</p>
 <div class="section" id="conversion-from-other-systems">
-<h2>Conversion from other systems<a class="headerlink" href="#conversion-from-other-systems" title="永久链接至标题">¶</a></h2>
-<p>This section is intended to collect helpful hints for those wanting to migrate
-to reStructuredText/Sphinx from other documentation systems.</p>
+<h2>从其他文档格式导入<a class="headerlink" href="#conversion-from-other-systems" title="永久链接至标题">¶</a></h2>
+<p>这个部分列举转换文档到 reStructuredText/Sphinx 的小技巧。</p>
 <ul class="simple">
-<li>Gerard Flanagan has written a script to convert pure HTML to reST; it can be
-found at the <a class="reference external" href="https://pypi.python.org/pypi/html2rest">Python Package Index</a>.</li>
-<li>For converting the old Python docs to Sphinx, a converter was written which
-can be found at <a class="reference external" href="http://svn.python.org/projects/doctools/converter">the Python SVN repository</a>.  It contains generic
-code to convert Python-doc-style LaTeX markup to Sphinx reST.</li>
+<li>Gerard Flanagan 写了一个脚本可以把 HTML 文件转换为 reST，参见 <a class="reference external" href="https://pypi.python.org/pypi/html2rest">Python Package Index</a>。</li>
+<li>如果要把旧的 Python 文档导入 Sphinx，在 <a class="reference external" href="http://svn.python.org/projects/doctools/converter">the Python SVN repository</a> 可以找到一个转换器。它可以较为通用地把 Python doc 风格的的 LaTeX 标记转换为 Sphinx 的 reST。</li>
 <li>Marcin Wojdyr has written a script to convert Docbook to reST with Sphinx
 markup; it is at <a class="reference external" href="https://github.com/wojdyr/db2rst">GitHub</a>.</li>
-<li>Christophe de Vienne wrote a tool to convert from Open/LibreOffice documents
-to Sphinx: <a class="reference external" href="https://pypi.python.org/pypi/odt2sphinx/">odt2sphinx</a>.</li>
-<li>To convert different markups, <a class="reference external" href="http://pandoc.org/">Pandoc</a> is
-a very helpful tool.</li>
+<li>Christophe de Vienne 写了一个工具，可以把 Open/LibreOffice 的文档转换到 Sphinx：<a class="reference external" href="https://pypi.python.org/pypi/odt2sphinx/">odt2sphinx</a>。</li>
+<li>如果要转换不同的标记语言，<a class="reference external" href="http://pandoc.org/">Pandoc</a> 可以帮到你。</li>
 </ul>
 </div>
 <div class="section" id="use-with-other-systems">
-<h2>Use with other systems<a class="headerlink" href="#use-with-other-systems" title="永久链接至标题">¶</a></h2>
-<p>See the <a class="reference internal" href="faq.html#usingwith"><span class="std std-ref">pertinent section in the FAQ list</span></a>.</p>
+<h2>与其他系统集成<a class="headerlink" href="#use-with-other-systems" title="永久链接至标题">¶</a></h2>
+<p>参考 <a class="reference internal" href="faq.html#usingwith"><span class="std std-ref">FAQ 列表中的相关章节</span></a>。</p>
 </div>
 <div class="section" id="prerequisites">
-<h2>Prerequisites<a class="headerlink" href="#prerequisites" title="永久链接至标题">¶</a></h2>
-<p>Sphinx needs at least <strong>Python 2.7</strong> or <strong>Python 3.4</strong> to run, as well as the
-<a class="reference external" href="http://docutils.sourceforge.net/">docutils</a> and <a class="reference external" href="http://jinja.pocoo.org/">Jinja2</a> libraries.  Sphinx should work with docutils version 0.10
-or some (not broken) SVN trunk snapshot.  If you like to have source code
-highlighting support, you must also install the <a class="reference external" href="http://pygments.org/">Pygments</a> library.</p>
+<h2>系统需求<a class="headerlink" href="#prerequisites" title="永久链接至标题">¶</a></h2>
+<p>Sphinx 至少需要 <strong>Python2.7</strong> 或者 <strong>Python 3.4</strong> 才可运行，另外也需要 <a class="reference external" href="http://docutils.sourceforge.net/">docutils</a> 和 <a class="reference external" href="http://jinja.pocoo.org/">Jinja2</a> 库。Sphinx 可以配合 docutils 0.10 版本或者其他一些（没有错误的）SVN 主干。如果你还想要源代码高亮的支持，那么也要安装 <a class="reference external" href="http://pygments.org/">Pygments</a> 库。</p>
 </div>
 <div class="section" id="usage">
-<h2>Usage<a class="headerlink" href="#usage" title="永久链接至标题">¶</a></h2>
-<p>See <a class="reference internal" href="tutorial.html"><span class="doc">First Steps with Sphinx</span></a> for an introduction.  It also contains links to more
-advanced sections in this manual for the topics it discusses.</p>
+<h2>如何使用<a class="headerlink" href="#usage" title="永久链接至标题">¶</a></h2>
+<p>查阅 <a class="reference internal" href="tutorial.html"><span class="doc">Sphinx 初步</span></a> 可供入门使用。里面也包含了一些链接，可供详细阅读它提到的内容。</p>
 </div>
 </div>
 
@@ -206,13 +196,13 @@ advanced sections in this manual for the topics it discusses.</p>
       <h3>导航</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
-          <a href="genindex.html" title="总目录"
+          <a href="genindex.html" title="总索引"
              >索引</a></li>
         <li class="right" >
           <a href="py-modindex.html" title="Python 模块索引"
              >模块</a> |</li>
         <li class="right" >
-          <a href="tutorial.html" title="First Steps with Sphinx"
+          <a href="tutorial.html" title="Sphinx 初步"
              >下一页</a> |</li>
         <li class="right" >
           <a href="contents.html" title="Sphinx documentation contents"

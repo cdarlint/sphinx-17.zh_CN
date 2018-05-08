@@ -80,7 +80,7 @@
       <h3>导航</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
-          <a href="../genindex.html" title="总目录"
+          <a href="../genindex.html" title="总索引"
              accesskey="I">索引</a></li>
         <li class="right" >
           <a href="../py-modindex.html" title="Python 模块索引"
@@ -106,8 +106,8 @@
 <li><a class="reference internal" href="#description">Description</a></li>
 <li><a class="reference internal" href="#options">Options</a></li>
 <li><a class="reference internal" href="#environment-variables">Environment Variables</a></li>
-<li><a class="reference internal" href="#deprecation-warnings">Deprecation Warnings</a></li>
-<li><a class="reference internal" href="#see-also">See also</a></li>
+<li><a class="reference internal" href="#deprecation-warnings">已弃用告警</a></li>
+<li><a class="reference internal" href="#see-also">参见</a></li>
 </ul>
 </li>
 </ul>
@@ -171,48 +171,38 @@ files can be built by specifying individual filenames.</p>
 <dl class="option">
 <dt id="cmdoption-sphinx-build-b">
 <code class="descname">-b</code><code class="descclassname"> buildername</code><a class="headerlink" href="#cmdoption-sphinx-build-b" title="永久链接至目标">¶</a></dt>
-<dd><p>The most important option: it selects a builder.  The most common builders
-are:</p>
+<dd><p>这是最重要的参数：选择构建器。常用的构建器有：</p>
 <dl class="docutils">
 <dt><strong>html</strong></dt>
-<dd>Build HTML pages.  This is the default builder.</dd>
+<dd>构建 HTML 页面。这是默认的构建器。</dd>
 <dt><strong>dirhtml</strong></dt>
-<dd>Build HTML pages, but with a single directory per document.  Makes for
-prettier URLs (no <code class="docutils literal notranslate"><span class="pre">.html</span></code>) if served from a webserver.</dd>
+<dd>构建 HTML 页面，每个文档生成一个单独的文件夹。用于网页服务器，可以显示出好看的 URL（可以不显示.html）。</dd>
 <dt><strong>singlehtml</strong></dt>
-<dd>Build a single HTML with the whole content.</dd>
+<dd>整个文档构建为单个 HTML 文件。</dd>
 <dt><strong>htmlhelp</strong>, <strong>qthelp</strong>, <strong>devhelp</strong>, <strong>epub</strong></dt>
-<dd>Build HTML files with additional information for building a documentation
-collection in one of these formats.</dd>
+<dd>构建 HTML 文件，并附加一些信息，然后输出这些格式的文件。</dd>
 <dt><strong>applehelp</strong></dt>
-<dd>Build an Apple Help Book.  Requires <strong class="program">hiutil</strong> and
-<strong class="program">codesign</strong>, which are not Open Source and presently only
-available on Mac OS X 10.6 and higher.</dd>
+<dd>构建苹果帮助手册（Apple Help Book）。需要 <strong class="program">hiutil</strong> 和 <strong class="program">codesign</strong> 程序，它们不是开源软件，而且只在 Mac OS X 10.6 以上版本中提供。</dd>
 <dt><strong>latex</strong></dt>
-<dd>Build LaTeX sources that can be compiled to a PDF document using
-<strong class="program">pdflatex</strong>.</dd>
+<dd>构建 LaTeX 源文件，以便使用 <strong class="program">pdflatex</strong> 编译为 PDF 文档。</dd>
 <dt><strong>man</strong></dt>
-<dd>Build manual pages in groff format for UNIX systems.</dd>
+<dd>为 UNIX 系统构建 groff 格式的手册（man pages）。</dd>
 <dt><strong>texinfo</strong></dt>
-<dd>Build Texinfo files that can be processed into Info files using
-<strong class="program">makeinfo</strong>.</dd>
+<dd>构建 Texinfo 文件，以便使用 <strong class="program">makeinfo</strong> 程序处理为 Info 文件。</dd>
 <dt><strong>text</strong></dt>
-<dd>Build plain text files.</dd>
+<dd>构建纯文本文件。</dd>
 <dt><strong>gettext</strong></dt>
-<dd>Build gettext-style message catalogs (<code class="docutils literal notranslate"><span class="pre">.pot</span></code> files).</dd>
+<dd>构建 gettext 样式的文本集（“.pot”格式）。</dd>
 <dt><strong>doctest</strong></dt>
-<dd>Run all doctests in the documentation, if the <a class="reference internal" href="../ext/doctest.html#module-sphinx.ext.doctest" title="sphinx.ext.doctest: Test snippets in the documentation."><code class="xref py py-mod docutils literal notranslate"><span class="pre">doctest</span></code></a>
-extension is enabled.</dd>
+<dd>如果启动了 <a class="reference internal" href="../ext/doctest.html#module-sphinx.ext.doctest" title="sphinx.ext.doctest: Test snippets in the documentation."><code class="xref py py-mod docutils literal notranslate"><span class="pre">doctest</span></code></a> 扩展程序，可运行文档中的所有 doctest 测试。</dd>
 <dt><strong>linkcheck</strong></dt>
-<dd>Check the integrity of all external links.</dd>
+<dd>检查所有外部链接的资源是否可以访问。</dd>
 <dt><strong>xml</strong></dt>
-<dd>Build Docutils-native XML files.</dd>
+<dd>构建 Docutils-native 的 XML 文件。</dd>
 <dt><strong>pseudoxml</strong></dt>
-<dd>Build compact pretty-printed “pseudo-XML” files displaying the
-internal structure of the intermediate document trees.</dd>
+<dd>构建紧凑而漂亮的“伪 XML”格式文件，可供审阅文档中的层次结构。</dd>
 </dl>
-<p>See <a class="reference internal" href="../builders.html#builders"><span class="std std-ref">Available builders</span></a> for a list of all builders shipped with Sphinx.
-Extensions can add their own builders.</p>
+<p>有关 Sphinx 提供的完整构建器，请见 <a class="reference internal" href="../builders.html#builders"><span class="std std-ref">可用的构建器</span></a>。扩展程序也可以添加一些第三方的构建器。</p>
 </dd></dl>
 
 <span class="target" id="make-mode"></span><dl class="option">
@@ -251,16 +241,13 @@ builders.)</p>
 <dl class="option">
 <dt id="cmdoption-sphinx-build-e">
 <code class="descname">-E</code><code class="descclassname"></code><a class="headerlink" href="#cmdoption-sphinx-build-e" title="永久链接至目标">¶</a></dt>
-<dd><p>Don’t use a saved <a class="reference internal" href="../glossary.html#term-environment"><span class="xref std std-term">environment</span></a> (the structure caching all
-cross-references), but rebuild it completely.  The default is to only read
-and parse source files that are new or have changed since the last run.</p>
+<dd><p>不使用已保存的 :term:<a href="#id1"><span class="problematic" id="id2">`</span></a>运行环境`（其中缓存了交叉引用列表），每次都重新构建它。默认是只读取和处理新的或者上次运行之后有改动的文件。</p>
 </dd></dl>
 
 <dl class="option">
 <dt id="cmdoption-sphinx-build-t">
 <code class="descname">-t</code><code class="descclassname"> tag</code><a class="headerlink" href="#cmdoption-sphinx-build-t" title="永久链接至目标">¶</a></dt>
-<dd><p>Define the tag <em>tag</em>.  This is relevant for <a class="reference internal" href="../markup/misc.html#directive-only" title="only directive"><code class="xref rst rst-dir docutils literal notranslate"><span class="pre">only</span></code></a> directives that
-only include their content if this tag is set.</p>
+<dd><p>定义指定的 <em>tag</em> 标签。仅供 <a class="reference internal" href="../markup/misc.html#directive-only" title="only directive"><code class="xref rst rst-dir docutils literal notranslate"><span class="pre">only</span></code></a> 导语使用，只包含它里面的内容。</p>
 <div class="versionadded">
 <p><span class="versionmodified">0.6 新版功能.</span></p>
 </div>
@@ -269,11 +256,7 @@ only include their content if this tag is set.</p>
 <dl class="option">
 <dt id="cmdoption-sphinx-build-d">
 <code class="descname">-d</code><code class="descclassname"> path</code><a class="headerlink" href="#cmdoption-sphinx-build-d" title="永久链接至目标">¶</a></dt>
-<dd><p>Since Sphinx has to read and parse all source files before it can write an
-output file, the parsed source files are cached as “doctree pickles”.
-Normally, these files are put in a directory called <code class="file docutils literal notranslate"><span class="pre">.doctrees</span></code> under
-the build directory; with this option you can select a different cache
-directory (the doctrees can be shared between all builders).</p>
+<dd><p>因为 Sphinx 需要先读取和处理所有的源文件，然后才能开始输出和写入文件，处理后的源文件会缓存成“doctree pickles”。通常来说，这些文件会放在构建目录中的 <code class="file docutils literal notranslate"><span class="pre">.doctrees</span></code> 文件夹中；使用这个选项你可以选择一个不同的缓存文件夹（不同的构建器可以共用同一个缓存文件夹）。</p>
 </dd></dl>
 
 <dl class="option">
@@ -284,7 +267,7 @@ multiprocessor machines more effective.  Note that not all parts and not all
 builders of Sphinx can be parallelized.  If <code class="docutils literal notranslate"><span class="pre">auto</span></code> argument is given,
 Sphinx uses the number of CPUs as <em>N</em>.</p>
 <div class="versionadded">
-<p><span class="versionmodified">1.2 新版功能: </span>This option should be considered <em>experimental</em>.</p>
+<p><span class="versionmodified">1.2 新版功能: </span>这是一个“实验性”功能。</p>
 </div>
 <div class="versionchanged">
 <p><span class="versionmodified">在 1.7 版更改: </span>Support <code class="docutils literal notranslate"><span class="pre">auto</span></code> argument.</p>
@@ -294,11 +277,7 @@ Sphinx uses the number of CPUs as <em>N</em>.</p>
 <dl class="option">
 <dt id="cmdoption-sphinx-build-c">
 <code class="descname">-c</code><code class="descclassname"> path</code><a class="headerlink" href="#cmdoption-sphinx-build-c" title="永久链接至目标">¶</a></dt>
-<dd><p>Don’t look for the <code class="file docutils literal notranslate"><span class="pre">conf.py</span></code> in the source directory, but use the given
-configuration directory instead.  Note that various other files and paths
-given by configuration values are expected to be relative to the
-configuration directory, so they will have to be present at this location
-too.</p>
+<dd><p>不使用默认的文档根目录存放配置文件 <code class="file docutils literal notranslate"><span class="pre">conf.py</span></code>，指定另外的配置文件路径。注意可能会有一些文件或者路径是相对于配置文件目录的，所以记得要把这些文件也放在这个指定的位置。</p>
 <div class="versionadded">
 <p><span class="versionmodified">0.3 新版功能.</span></p>
 </div>
@@ -307,7 +286,7 @@ too.</p>
 <dl class="option">
 <dt id="id1">
 <code class="descname">-C</code><code class="descclassname"></code><a class="headerlink" href="#id1" title="永久链接至目标">¶</a></dt>
-<dd><p>Don’t look for a configuration file; only take options via the <code class="docutils literal notranslate"><span class="pre">-D</span></code> option.</p>
+<dd><p>不使用配置文件，只使用 <code class="docutils literal notranslate"><span class="pre">-D</span></code> 选项提供的参数。</p>
 <div class="versionadded">
 <p><span class="versionmodified">0.5 新版功能.</span></p>
 </div>
@@ -316,25 +295,22 @@ too.</p>
 <dl class="option">
 <dt id="id2">
 <code class="descname">-D</code><code class="descclassname"> setting=value</code><a class="headerlink" href="#id2" title="永久链接至目标">¶</a></dt>
-<dd><p>Override a configuration value set in the <code class="file docutils literal notranslate"><span class="pre">conf.py</span></code> file.  The value
-must be a number, string, list or dictionary value.</p>
-<p>For lists, you can separate elements with a comma like this: <code class="docutils literal notranslate"><span class="pre">-D</span>
-<span class="pre">html_theme_path=path1,path2</span></code>.</p>
-<p>For dictionary values, supply the setting name and key like this:
-<code class="docutils literal notranslate"><span class="pre">-D</span> <span class="pre">latex_elements.docclass=scrartcl</span></code>.</p>
-<p>For boolean values, use <code class="docutils literal notranslate"><span class="pre">0</span></code> or <code class="docutils literal notranslate"><span class="pre">1</span></code> as the value.</p>
+<dd><p>使用指定的值替换掉配置文件 <code class="file docutils literal notranslate"><span class="pre">conf.py</span></code> 中的值。这里设置的值的类型只能是数字、字符串、列表或者字典。</p>
+<p>列表类型，使用逗号分隔：<code class="docutils literal notranslate"><span class="pre">-D</span> <span class="pre">html_theme_path=path1,path2</span></code>。</p>
+<p>字典类型，指定变量名和键，再写值，例如：<code class="docutils literal notranslate"><span class="pre">-D</span> <span class="pre">latex_elements.docclass=scrartcl</span></code>。</p>
+<p>布尔型（是、否），使用 <code class="docutils literal notranslate"><span class="pre">0</span></code> 或者 <code class="docutils literal notranslate"><span class="pre">1</span></code>。</p>
 <div class="versionchanged">
-<p><span class="versionmodified">在 0.6 版更改: </span>The value can now be a dictionary value.</p>
+<p><span class="versionmodified">在 0.6 版更改: </span>现在可以使用字典类型了。</p>
 </div>
 <div class="versionchanged">
-<p><span class="versionmodified">在 1.3 版更改: </span>The value can now also be a list value.</p>
+<p><span class="versionmodified">在 1.3 版更改: </span>现在也可以使用列表类型了。</p>
 </div>
 </dd></dl>
 
 <dl class="option">
 <dt id="id3">
 <code class="descname">-A</code><code class="descclassname"> name=value</code><a class="headerlink" href="#id3" title="永久链接至目标">¶</a></dt>
-<dd><p>Make the <em>name</em> assigned to <em>value</em> in the HTML templates.</p>
+<dd><p>在 HTML 模板中，为变量 <em>name</em> 指定值 <em>value</em>。</p>
 <div class="versionadded">
 <p><span class="versionmodified">0.5 新版功能.</span></p>
 </div>
@@ -343,22 +319,19 @@ must be a number, string, list or dictionary value.</p>
 <dl class="option">
 <dt id="cmdoption-sphinx-build-n">
 <code class="descname">-n</code><code class="descclassname"></code><a class="headerlink" href="#cmdoption-sphinx-build-n" title="永久链接至目标">¶</a></dt>
-<dd><p>Run in nit-picky mode.  Currently, this generates warnings for all missing
-references.  See the config value <a class="reference internal" href="../config.html#confval-nitpick_ignore"><code class="xref std std-confval docutils literal notranslate"><span class="pre">nitpick_ignore</span></code></a> for a way to
-exclude some references as “known missing”.</p>
+<dd><p>使用 nit-picky 模式。目前来说，就是对每个缺少的引用给出 warning。使用配置 <a class="reference internal" href="../config.html#confval-nitpick_ignore"><code class="xref std std-confval docutils literal notranslate"><span class="pre">nitpick_ignore</span></code></a>，可以把某些引用标为“已知缺失”。</p>
 </dd></dl>
 
 <dl class="option">
 <dt id="id4">
 <code class="descname">-N</code><code class="descclassname"></code><a class="headerlink" href="#id4" title="永久链接至目标">¶</a></dt>
-<dd><p>Do not emit colored output.</p>
+<dd><p>不使用彩色输出。</p>
 </dd></dl>
 
 <dl class="option">
 <dt id="cmdoption-sphinx-build-v">
 <code class="descname">-v</code><code class="descclassname"></code><a class="headerlink" href="#cmdoption-sphinx-build-v" title="永久链接至目标">¶</a></dt>
-<dd><p>Increase verbosity (loglevel).  This option can be given up to three times
-to get more debug logging output.  It implies <a class="reference internal" href="#id7"><code class="xref std std-option docutils literal notranslate"><span class="pre">-T</span></code></a>.</p>
+<dd><p>增加 verbose 程度（loglevel）。此选项可以输出多达三倍的日志。此选项会打开 <a class="reference internal" href="#id7"><code class="xref std std-option docutils literal notranslate"><span class="pre">-T</span></code></a> 选项。</p>
 <div class="versionadded">
 <p><span class="versionmodified">1.2 新版功能.</span></p>
 </div>
@@ -367,36 +340,31 @@ to get more debug logging output.  It implies <a class="reference internal" href
 <dl class="option">
 <dt id="cmdoption-sphinx-build-q">
 <code class="descname">-q</code><code class="descclassname"></code><a class="headerlink" href="#cmdoption-sphinx-build-q" title="永久链接至目标">¶</a></dt>
-<dd><p>Do not output anything on standard output, only write warnings and errors to
-standard error.</p>
+<dd><p>标准输出不输出任何内容，只把 warning 和 error 写到标准错误输出。</p>
 </dd></dl>
 
 <dl class="option">
 <dt id="id5">
 <code class="descname">-Q</code><code class="descclassname"></code><a class="headerlink" href="#id5" title="永久链接至目标">¶</a></dt>
-<dd><p>Do not output anything on standard output, also suppress warnings.  Only
-errors are written to standard error.</p>
+<dd><p>标准输出不输出任何内容，也不输出 warning。只把 error 写到标准错误输出。</p>
 </dd></dl>
 
 <dl class="option">
 <dt id="cmdoption-sphinx-build-w">
 <code class="descname">-w</code><code class="descclassname"> file</code><a class="headerlink" href="#cmdoption-sphinx-build-w" title="永久链接至目标">¶</a></dt>
-<dd><p>Write warnings (and errors) to the given file, in addition to standard error.</p>
+<dd><p>把 warning 和 error 写到指定文件，标准错误输出也会输出。</p>
 </dd></dl>
 
 <dl class="option">
 <dt id="id6">
 <code class="descname">-W</code><code class="descclassname"></code><a class="headerlink" href="#id6" title="永久链接至目标">¶</a></dt>
-<dd><p>Turn warnings into errors.  This means that the build stops at the first
-warning and <code class="docutils literal notranslate"><span class="pre">sphinx-build</span></code> exits with exit status 1.</p>
+<dd><p>把 warning 变成 error。这意味着遇到第一个 warning 时，构建过程就会停下，而且 <code class="docutils literal notranslate"><span class="pre">sphinx-build</span></code> 退出时会返回状态 1。</p>
 </dd></dl>
 
 <dl class="option">
 <dt id="id7">
 <code class="descname">-T</code><code class="descclassname"></code><a class="headerlink" href="#id7" title="永久链接至目标">¶</a></dt>
-<dd><p>Display the full traceback when an unhandled exception occurs.  Otherwise,
-only a summary is displayed and the traceback information is saved to a file
-for further analysis.</p>
+<dd><p>遇到未处理的异常时，显示完整的跟踪记录（traceback）。否则只显示一个简要的说明，详细的跟踪记录保存为文件以供后续分析。</p>
 <div class="versionadded">
 <p><span class="versionmodified">1.2 新版功能.</span></p>
 </div>
@@ -405,14 +373,13 @@ for further analysis.</p>
 <dl class="option">
 <dt id="cmdoption-sphinx-build-p">
 <code class="descname">-P</code><code class="descclassname"></code><a class="headerlink" href="#cmdoption-sphinx-build-p" title="永久链接至目标">¶</a></dt>
-<dd><p>(Useful for debugging only.)  Run the Python debugger, <code class="xref py py-mod docutils literal notranslate"><span class="pre">pdb</span></code>, if an
-unhandled exception occurs while building.</p>
+<dd><p>（仅供调试使用。）如果构建过程中遇到未处理的异常，运行 Python 调试器 <code class="xref py py-mod docutils literal notranslate"><span class="pre">pdb</span></code>。</p>
 </dd></dl>
 
 <dl class="option">
 <dt id="cmdoption-sphinx-build-h">
 <code class="descname">-h</code><code class="descclassname"></code><code class="descclassname">, </code><code class="descname">--help</code><code class="descclassname"></code><code class="descclassname">, </code><code class="descname">--version</code><code class="descclassname"></code><a class="headerlink" href="#cmdoption-sphinx-build-h" title="永久链接至目标">¶</a></dt>
-<dd><p>Display usage summary or Sphinx version.</p>
+<dd><p>显示使用方法简介，或者 Sphinx 版本号。</p>
 <div class="versionadded">
 <p><span class="versionmodified">1.2 新版功能.</span></p>
 </div>
@@ -433,10 +400,7 @@ and build directories. Sphinx will then try to build only these output files
 </dd></dl>
 
 <p class="rubric" id="makefile-options">Makefile Options</p>
-<p>The <code class="file docutils literal notranslate"><span class="pre">Makefile</span></code> and <code class="file docutils literal notranslate"><span class="pre">make.bat</span></code> files created by
-<strong class="program">sphinx-quickstart</strong> usually run <strong class="program">sphinx-build</strong> only with the
-<a class="reference internal" href="#cmdoption-sphinx-build-b"><code class="xref std std-option docutils literal notranslate"><span class="pre">-b</span></code></a> and <a class="reference internal" href="#cmdoption-sphinx-build-d"><code class="xref std std-option docutils literal notranslate"><span class="pre">-d</span></code></a> options.  However, they support the following
-variables to customize behavior:</p>
+<p>由 <strong class="program">sphinx-quickstart</strong> 创建的 <code class="file docutils literal notranslate"><span class="pre">Makefile</span></code> 和 <code class="file docutils literal notranslate"><span class="pre">make.bat</span></code> 文件，调用 <strong class="program">sphinx-build</strong> 时，通常只有 <a class="reference internal" href="#cmdoption-sphinx-build-b"><code class="xref std std-option docutils literal notranslate"><span class="pre">-b</span></code></a> 和 <a class="reference internal" href="#cmdoption-sphinx-build-d"><code class="xref std std-option docutils literal notranslate"><span class="pre">-d</span></code></a> 两个选项。不过它们也支持如下变量来定制他们的操作：</p>
 <dl class="describe">
 <dt>
 <code class="descname">PAPER</code></dt>
@@ -446,39 +410,35 @@ variables to customize behavior:</p>
 <dl class="describe">
 <dt>
 <code class="descname">SPHINXBUILD</code></dt>
-<dd><p>The command to use instead of <code class="docutils literal notranslate"><span class="pre">sphinx-build</span></code>.</p>
+<dd><p>这个变量提供一个程序名，代替 <code class="docutils literal notranslate"><span class="pre">sphinx-build</span></code>。</p>
 </dd></dl>
 
 <dl class="describe">
 <dt>
 <code class="descname">BUILDDIR</code></dt>
-<dd><p>The build directory to use instead of the one chosen in
-<strong class="program">sphinx-quickstart</strong>.</p>
+<dd><p>指定构建目录，而不使用 <strong class="program">sphinx-quickstart</strong> 所指定的。</p>
 </dd></dl>
 
 <dl class="describe">
 <dt>
 <code class="descname">SPHINXOPTS</code></dt>
-<dd><p>Additional options for <strong class="program">sphinx-build</strong>.</p>
+<dd><p>其他传递给 <strong class="program">sphinx-build</strong> 的选项。</p>
 </dd></dl>
 
 </div>
 <div class="section" id="deprecation-warnings">
-<span id="when-deprecation-warnings-are-displayed"></span><h2>Deprecation Warnings<a class="headerlink" href="#deprecation-warnings" title="永久链接至标题">¶</a></h2>
-<p>If any deprecation warning like <code class="docutils literal notranslate"><span class="pre">RemovedInSphinxXXXWarning</span></code> are displayed
-when building a user’s document, some Sphinx extension is using deprecated
-features. In that case, please report it to author of the extension.</p>
-<p>To disable the deprecation warnings, please set <code class="docutils literal notranslate"><span class="pre">PYTHONWARNINGS=</span></code> environment
-variable to your environment. For example:</p>
+<span id="when-deprecation-warnings-are-displayed"></span><h2>已弃用告警<a class="headerlink" href="#deprecation-warnings" title="永久链接至标题">¶</a></h2>
+<p>如果某个 Sphinx 扩展程序使用了已经弃用的功能，会出现已弃用告警，类似于 <code class="docutils literal notranslate"><span class="pre">RemovedInSphinxXXXWarning</span></code>。如果看到这种告警，请把它报告给扩展程序的作者。</p>
+<p>要关闭已弃用告警请给指定的运行环境设置 <code class="docutils literal notranslate"><span class="pre">PYTHONWARNINGS=</span></code> 环境变量。例如：</p>
 <ul class="simple">
-<li><code class="docutils literal notranslate"><span class="pre">PYTHONWARNINGS=</span> <span class="pre">make</span> <span class="pre">html</span></code> (Linux/Mac)</li>
-<li><code class="docutils literal notranslate"><span class="pre">export</span> <span class="pre">PYTHONWARNINGS=</span></code> and do <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">html</span></code> (Linux/Mac)</li>
-<li><code class="docutils literal notranslate"><span class="pre">set</span> <span class="pre">PYTHONWARNINGS=</span></code> and do <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">html</span></code> (Windows)</li>
-<li>modify your Makefile/make.bat and set the environment variable</li>
+<li>运行 <code class="docutils literal notranslate"><span class="pre">PYTHONWARNINGS=</span> <span class="pre">make</span> <span class="pre">html</span></code> （适用于Linux/Mac系统），注意中间的空格</li>
+<li>先运行 <code class="docutils literal notranslate"><span class="pre">export</span> <span class="pre">PYTHONWARNINGS=</span></code> 然后 <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">html</span></code> （适用于Linux/Mac系统）</li>
+<li>先运行 <code class="docutils literal notranslate"><span class="pre">set</span> <span class="pre">PYTHONWARNINGS=</span></code> 然后 <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">html</span></code> （适用于 Windows 系统）</li>
+<li>修改你的 Makefilie 和/或 make.bat 文件，设置其中的环境变量</li>
 </ul>
 </div>
 <div class="section" id="see-also">
-<h2>See also<a class="headerlink" href="#see-also" title="永久链接至标题">¶</a></h2>
+<h2>参见<a class="headerlink" href="#see-also" title="永久链接至标题">¶</a></h2>
 <p><em class="manpage">sphinx-quickstart(1)</em></p>
 </div>
 </div>
@@ -493,7 +453,7 @@ variable to your environment. For example:</p>
       <h3>导航</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
-          <a href="../genindex.html" title="总目录"
+          <a href="../genindex.html" title="总索引"
              >索引</a></li>
         <li class="right" >
           <a href="../py-modindex.html" title="Python 模块索引"
